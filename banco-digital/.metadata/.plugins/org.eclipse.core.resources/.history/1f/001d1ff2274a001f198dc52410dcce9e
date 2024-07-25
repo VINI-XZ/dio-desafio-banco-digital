@@ -1,0 +1,31 @@
+package banco.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import banco.cliente.Cliente;
+import banco.conta.Conta;
+import banco.conta.ContaCorrente;
+import banco.conta.ContaPoupanca;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente cidinha = new Cliente();
+		cidinha.setNome("Kaka");
+		
+		List<Conta>clientes = new ArrayList<Conta>();
+		
+		Conta cc = new ContaCorrente(cidinha);
+		Conta cPoupanca = new ContaPoupanca(cidinha);
+		
+		clientes.add(cPoupanca);
+		clientes.add(cc);
+
+		
+		
+		
+		cc.imprimirExtrato();
+		cPoupanca.imprimirExtrato();
+	}
+
+}

@@ -1,0 +1,7 @@
+import banco.conta.Conta;
+
+public class ContaCorrente extends Conta {
+
+	
+	
+}

@@ -1,0 +1,26 @@
+package banco.main;
+
+import banco.cliente.Cliente;
+import banco.conta.Conta;
+import banco.conta.ContaCorrente;
+import banco.conta.ContaPoupanca;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente cidinha = new Cliente();
+		cidinha.setNome("Kaka");
+		
+		
+		
+		
+		
+		
+		
+		Conta cc = new ContaCorrente();
+		Conta cPoupanca = new ContaPoupanca();
+		
+		cc.imprimirExtrato();
+		cPoupanca.imprimirExtrato();
+	}
+
+}
